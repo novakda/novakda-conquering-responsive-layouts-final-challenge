@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    /* outline: 1px solid limegreen !important; */
+    /* background: rgb(0 100 0 / 0.1) !important; */
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:focus-visible,
+a:hover {
+    opacity: 0.75;
+}
+
+.link-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.link-list__spaced>li {
+    padding-bottom: 1em;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #a59678;
+    padding: 0.1em 0.5em;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+#hero .btn {
+    font-size: 1.5rem;
+}
+
+/* desktop */
+/* .left-footer {
+    width: 50%;
+} */
+
+
+/* default heading color */
+:is(h1, h2, h3, h4, h5, h6) {
+    color: #a59678;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1em;
+}
+
+/* default heading spacing */
+
+
+
+/* panels */
+#main>div {
+    padding-inline: 1rem;
+}
+
+#navbar {
+    background-color: #2E323F;
+    color: white;
+}
+
+#hero {
+    font-size: 1.5rem;
+    background-color: #3B4050;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 5.625rem;
+    line-height: 1;
+}
+
+#hero .btn {
+    margin: 1em auto;
+}
+
+#herosub h2 {
+    font-size: 1.875rem;
+}
+
+#contentpanel h2 {
+    font-size: 2.25rem;
+}
+
+#contentpanel h3 {
+    color: white;
+}
+
+#contentpanel p {
+    margin-bottom: 1em;
+}
+
+#contentpanel img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contentpanel-sidebar>div {
+    background-color: #3B4050;
+    color: white;
+    /* how do headings influence em size? */
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#footer {
+    background-color: #3B4050;
+    color: white;
+    text-align: center;
+}
+
+#footer h2 {
+    color: white;
+    font-size: 1.125rem;
+    text-align: center;    
+}
+
+#footer h3 {
+    font-size: 1rem;
+    margin: 1em auto;
+}
