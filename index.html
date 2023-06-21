@@ -6,116 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
 </head>
 
-<body>
-    <div id="main">
-        <div id="navbar">
+<body class="xdebug">
+    <div id="navbar" class="navbar panel bg-clr-darkest fs-200">
             <div class="logo"><img src="images/logo.svg" alt="conquering responsive layouts"></div>
-            <ul class="link-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Sign in</a></li>
-                <li class="btn">Sign Up</a></li>
+            <ul class="link-list uppercase">
+                <li><a class="navbar__link" href="#">Home</a></li>
+                <li><a class="navbar__link" href="#">About</a></li>
+                <li><a class="navbar__link" href="#">Contact</a></li>
+                <li><a class="navbar__link" href="#">Sign in</a></li>
+                <li class="navbar__link btn"><a href="#">Sign Up</a></li>
             </ul>
         </div>
-        <div id="hero">
-            <h1><span class="emphasis">Responsive layouts</span> don't have to be a struggle</h1>
-            <div>  
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="btn">I want to learn</a>
+        <div id="hero" class="panel panel bg-clr-dark fs-400">
+            <div class="wrapper">
+                <h1 class="heading fs-700">Responsive layouts <span class="clr-accent">don't have to be a struggle</span></h1>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.</p>
+                    <a href="#" class="btn btn--large uppercase">I want to learn</a>
+                </div>
             </div>
         </div>
-        <div id="herosub">
-            <div>
-                <h2>Mobile first</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam,</p>
-            </div>
-            <div>
-                <h2>Efficient</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam,</p>
-            </div>
-            <div>
-                <h2>Done right</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam,</p>
+        <div id="herosub" class="panel fs-200 bg-clr-light">
+            <div class="wrapper">
+                <div>
+                    <h2 class="heading fs-500 clr-accent">Mobile first</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua Ut enim ad minim veniam,</p>
+                </div>
+                <div>
+                    <h2 class="heading fs-500 clr-accent">Efficient</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua Ut enim ad minim veniam,</p>
+                </div>
+                <div>
+                    <h2 class="heading fs-500 clr-accent">Done right</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua Ut enim ad minim veniam,</p>
+                </div>
             </div>
         </div>
-        <div id="contentpanel">
-            <div id="contentpanel-main">
-                <h2>It doesn’t have to be so hard</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+    <div id="contentpanel" class="panel bg-default bg-default">
+        <div class="wrapper flex flex-row--desktop-only flex-align-start ">
+            <div id="contentpanel-main" class="accent-headings fs-300">
+                <h2 class="heading fs-600 clr-accent">It doesn’t have to be so hard</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    etdolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
                 <img src="images/the-image.jpg" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    etdoloremagna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
             </div>
-            <div id="contentpanel-sidebar">
-                <div>
-                    <h3>Break it down</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et
-                        dolore magna aliqua.</p>
+            <div id="contentpanel-sidebar" class="panel fs-200 flex flex-row--tablet-only foobar">
+                <div class="panel bg-clr-dark">
+                    <h3 class="heading fs-500">Break it down</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        laboreet dolore magna aliqua.</p>
                 </div>
-                <div>
-                    <h3>Work your way up</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et
-                        dolore magna aliqua.</p>
+                <div class="panel bg-clr-dark heading--fs-500">
+                    <h3 class="heading fs-500">Work your way up</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
                 </div>
-                <div>
-                    <h3>Break it down</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et
-                        dolore magna aliqua.</p>
+                <div class="panel bg-clr-dark heading--fs-500">
+                    <h3 class="heading fs-500">Break it down</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
                 </div>
-            </div>
-        </div>
-        <div id="footer" class="flex-horz">
-            <h2>just scratching the surface</h2>
-            <div class="left-footer">
-                <h3>About our company</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <div>
-                <h3>Getting around</h3>
-                <ul class="link-list">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Other things</h3>
-                <ul class="link-list">
-                    <li>Lorem ipsum</li>
-                    <li>dolor</li>
-                    <li>sit amet</li>
-                    <li>consectetur</li>
-                </ul>
-            </div>
-            <div id="footer">
-                <h3>And more</h3>
-                <ul class="link-list link-list__spaced">
-                    <li>Lorem ipsum</li>
-                    <li>dolor</li>
-                    <li>sit amet</li>
-                    <li>consectetur</li>
-                </ul>
             </div>
         </div>
     </div>
-   
+    <div id="footer" class="panel bg-clr-dark">
+        <h2 class="heading fs-400 center-always clr-inverse">just scratching the surface</h2>
+        <div class="wrapper flex flex-fill-cols flex-row--desktop-only" id="footer-items">
+            <div>
+                <h3 class="heading fs-300 clr-accent">About our company</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="flex flex-fill-cols flex-col--phone-only">
+                <div>
+                    <h3 class="heading fs-300 clr-accent">Getting around</h3>
+                    <ul class="link-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="heading fs-300 clr-accent">Other things</h3>
+                    <ul class="link-list link-list--spaced">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">dolor</a></li>
+                        <li><a href="#">sit amet</a></li>
+                        <li><a href="#">consectetur</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="heading fs-300 clr-accent">And more</h3>
+                    <ul class="link-list link-list--spaced">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">dolor</a></li>
+                        <li><a href="#">sit amet</a></li>
+                        <li><a href="#">consectetur</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
