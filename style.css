@@ -127,6 +127,9 @@ a:hover {
 .flex-align-start {
     align-items: flex-start;
 }
+.flex-align-center {
+    align-items: center;
+}
 
 
 /* font sizes */
@@ -202,8 +205,20 @@ a:hover {
     background-color: green;
 }
 
+.flex-no-grow {
+    flex-grow: 0;
+}
+
+@media (max-width: 700px) {
+    .center--phone-only {
+        text-align: center;
+    }
+}
+
 /* tablet+ */
 @media (min-width: 700px) {
+
+    
     .flex-col--phone-only {
         flex-direction: row;
     }
@@ -218,6 +233,7 @@ a:hover {
 
 /* desktop+ */
 @media (min-width: 1000px) {
+
     .flex-col--phone-only {
         flex-direction: row;
     }
@@ -249,4 +265,10 @@ body.debug .flex-col-tablet-max {
 
 .foobar {
     background-color: green;
+}
+
+/* experimental class */
+.temp {
+    margin-inline: auto;
+    align-self: center
 }
