@@ -205,6 +205,10 @@ a:hover {
     background-color: green;
 }
 
+.flex-align-self-center {
+    align-self: center;
+}
+
 .flex-no-grow {
     flex-grow: 0;
 }
@@ -263,12 +267,16 @@ body.debug .flex-col-tablet-max {
     border: 1px solid red;
 }
 
+
 .foobar {
     background-color: green;
 }
 
 /* experimental class */
 .temp {
-    margin-inline: auto;
-    align-self: center
+    margin-inline: auto;    
+}
+
+.test2 {
+    line-height: 1em;
 }
