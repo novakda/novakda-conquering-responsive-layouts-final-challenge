@@ -202,7 +202,6 @@ a:hover {
 }
 .flex-row--desktop-only {
     flex-direction: column;
-    background-color: green;
 }
 
 .flex-align-self-center {
@@ -236,7 +235,6 @@ a:hover {
     }
     .flex-row--desktop-only {
         flex-direction: column;
-        background-color: purple;
     }
 }
 
@@ -251,30 +249,11 @@ a:hover {
     }
     .flex-row--desktop-only {
         flex-direction: row;
-        background-color: orange;
     }
 
     .left-footer {
         width: 40%;
     }
-}
-
-/* || DEBUG  */
-body.debug .flex-col-phone-max {
-    border: 10px solid green
-}
-
-body.debug .flex-col-tablet-max {
-    border: 10px solid red;
-}
-
-#contentpanel-sidebar > div {
-    border: 1px solid red;
-}
-
-
-.foobar {
-    background-color: green;
 }
 
 /* experimental class */
