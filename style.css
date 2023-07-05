@@ -219,6 +219,7 @@ a:hover {
     
 }
 
+
 /* tablet+ */
 @media (min-width: 700px) {
 
@@ -244,7 +245,7 @@ a:hover {
     .flex-col--phone-only {
         flex-direction: row;
     }
-    .flex-row-tablet-only {
+    .flex-row--tablet-only {
         flex-direction: column;
     }
     .flex-row--desktop-only {
@@ -270,3 +271,7 @@ a:hover {
     padding-block: 5rem;
 }
 
+
+#contentpanel {
+    padding-block: 5rem;
+}
