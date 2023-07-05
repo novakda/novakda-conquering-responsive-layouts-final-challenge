@@ -280,3 +280,8 @@ body.debug .flex-col-tablet-max {
 .test2 {
     line-height: 1em;
 }
+
+/* todo factor into util classes */
+#hero {
+    padding-block: 5rem;
+}
