@@ -217,11 +217,16 @@ a:hover {
     .center--phone-only {
         text-align: center;
     }
+    
 }
 
 /* tablet+ */
 @media (min-width: 700px) {
 
+
+    .padding--vert-7rem-phone {
+        padding-block: 7rem;
+    }
     
     .flex-col--phone-only {
         flex-direction: row;
@@ -285,3 +290,4 @@ body.debug .flex-col-tablet-max {
 #hero {
     padding-block: 5rem;
 }
+
