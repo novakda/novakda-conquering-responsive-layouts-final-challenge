@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Oswald:700');
 
+:root {   
 
-:root {
     /* typography scale - phone minor 2nd (1.200)*/
     --fs-900: 2.488rem;
     --fs-800: 2.074rem;
@@ -14,17 +14,17 @@
     --fs-100: 0.579rem;
 
     /* colors */
-    --clr-primary-200: #2F737F;
-    --clr-primary-400: #3B4050;
-    --clr-primary-600: #2E323F;
+    --clr-neutral-200: #2F737F;
+    --clr-neutral-400: #3B4050;
+    --clr-neutral-600: #2E323F;
     --clr-white-400: #ffffff;
-    --clr-accent-400: #A59678;
+    /* this may be more of a primary color, used for buttons and headings? */
+    --clr-primary-400: #A59678;
 }
 
-@media (min-width: 700) {
+@media (min-width: 700px) {
 
     :root {
-        /* typography scale - phone minor 2nd (1.200)*/
         /* typography scale - tablet+ augmented fourth (1.414), base size 16px; */
         /* close to original design spec */
         --fs-900: 5.653rem;
@@ -40,28 +40,19 @@
 
 }
 
-:root {}
-
-@media (max-width: 700px) {}
-
-@media (max-width: 1000px) {}
-
 /* foundation */
 
 
 html {
     font-size: 100%;
 }
-
-/*16px*/
-
 body {
     background: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     /* WCAG */
     line-height: 1.5;
-    color: #000000;
+    color: var(--clr-neutral-400);
 }
 
 p {
@@ -77,6 +68,8 @@ h5 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     line-height: 1.1;
+
+    color: var(--clr-primary-400);
 }
 
 h1 {
@@ -103,6 +96,15 @@ h5 {
 small,
 .text_small {
     font-size: var(--fs-200);
+}
+
+a,
+.link {
+    color: var(--clr-primary-400);
+}
+
+button, .button {
+    background-color: var(--clr-neutral-600);
 }
 
 
