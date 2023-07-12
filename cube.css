@@ -1,5 +1,90 @@
-/* foundation */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
+@media (max-width: 700px) {
+
+}
+
+@media (max-width: 1000px) {
+    
+}
+
+/* foundation */
+:root {
+    /* colors */
+    --clr-primary-200: #2F737F;
+    --clr-primary-400: #3B4050;
+    --clr-primary-600: #2E323F;
+    --clr-white-400: #ffffff;
+    --clr-accent-400: #A59678;
+
+    /* typography scale */
+    /* augmented fourth (1.414), base size 16px; */
+    /* close to original design spec */
+    --fs-900: 5.653rem;
+    --fs-800: 3.998rem;
+    --fs-700: 2.827rem;
+    --fs-600: 1.999rem;
+    --fs-500: 1.414rem;
+    --fs-400: 1rem;
+    --fs-300: 0.707rem;
+    --fs-200: 0.5rem;
+    --fs-100: 0.354rem;
+}
+
+html {
+    font-size: 100%;
+}
+
+/*16px*/
+
+body {
+    background: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: var(--fs-900);
+}
+
+h2 {
+    font-size: var(--fs-800);
+}
+
+h3 {
+    font-size: var(--fs-700);
+}
+
+h4 {
+    font-size: var(--fs-600);
+}
+
+h5 {
+    font-size: var(--fs-500);
+}
+
+small,
+.text_small {
+    font-size: var(--fs-200);
+}
 
 
 /* composition */
