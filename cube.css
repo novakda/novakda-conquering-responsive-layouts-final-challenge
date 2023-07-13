@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Oswald:700');
 
-:root {   
+:root {
 
     /* typography scale - phone minor 2nd (1.200)*/
     --fs-900: 2.488rem;
@@ -41,11 +41,14 @@
 }
 
 /* foundation */
-
+.flow>*+* {
+    margin-top: var(--flow-space, 1em);
+}
 
 html {
     font-size: 100%;
 }
+
 body {
     background: white;
     font-family: 'Montserrat', sans-serif;
@@ -103,7 +106,8 @@ a,
     color: var(--clr-primary-400);
 }
 
-button, .button {
+button,
+.button {
     background-color: var(--clr-neutral-600);
 }
 
@@ -115,3 +119,15 @@ button, .button {
 /* block */
 
 /* exception */
+
+.switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    --threshold: 50rem;
+  }
+  
+  .switcher > * {
+    flex-grow: 1;
+    flex-basis: calc((var(--threshold) - 100%) * 999);
+  }
