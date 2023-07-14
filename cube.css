@@ -12,12 +12,20 @@
     --fs-300: 0.833rem;
     --fs-200: 0.694rem;
     --fs-100: 0.579rem;
+    
+
+    /* font size aliases from spec */
+    --fs-90px: var(--fs-900);
+    --fs-36px: var(--fs-800);
+    --fs-30px: var(--fs-700);
+
 
     /* colors */
     --clr-neutral-200: #2F737F;
     --clr-neutral-400: #3B4050;
     --clr-neutral-600: #2E323F;
     --clr-white-400: #ffffff;
+    --clr-white-500: #F1F1F1;
     /* this may be more of a primary color, used for buttons and headings? */
     --clr-primary-400: #A59678;
 }
@@ -104,30 +112,96 @@ small,
 a,
 .link {
     color: var(--clr-primary-400);
+    text-decoration: none;    ;
 }
 
 button,
 .button {
-    background-color: var(--clr-neutral-600);
+    background-color: var(--clr-primary-400);
+    color: var(--clr-white-400);
+    border-radius: 999px;
+    padding: 0.25em 0.5em;
 }
-
 
 /* composition */
 
-/* utility */
-
-/* block */
-
-/* exception */
-
+.flow > * + * {
+    margin-top: 1em;
+    outline: 1px solid green;
+}
 .switcher {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     --threshold: 50rem;
-  }
-  
-  .switcher > * {
+}
+
+.switcher>* {
     flex-grow: 1;
     flex-basis: calc((var(--threshold) - 100%) * 999);
-  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    .medium-flex-row {
+        display: flex;
+    }	
+}
+
+@media only screen and (min-width: 700px) {
+    .min-medium-flex-row {
+        display: flex;
+    }	
+}
+
+/* utility */
+
+.list-of-links {
+    list-style-type: none;
+    padding-inline-start: 0;    
+}
+
+.wrapper {
+    padding: 0.5rem 5rem;
+}
+
+/* block */
+
+.dark-card,
+.dark-card h2,
+.dark-card h3 {
+    color: var(--clr-white-400);
+    background-color: var(--clr-neutral-600);
+}
+
+.navbar {
+    background-color: var(--clr-neutral-600);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+@media only screen and (max-width: 699.99px) {
+    .navbar {
+        text-align: center;
+    }
+}
+
+.navbar .list-of-links {
+    gap: 2em;
+}
+
+.herosub {
+    background-color: var(--clr-white-500);
+}
+
+.herosub h2 {
+    font-size: var(--fs-700);
+}
+
+/* exception */
+
+.list-of-links[data-type='navbar'] {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: var(--fs-500);
+}
