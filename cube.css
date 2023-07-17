@@ -225,7 +225,8 @@ button,
     .hero {
         display: flex;
         gap: 1rem;
-        align-items: center;;
+        align-items: center;
+        padding-block: 5rem;
     }	
 }
 
