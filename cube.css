@@ -110,9 +110,9 @@ small,
 }
 
 a,
-.link {
-    color: var(--clr-primary-400);
-    text-decoration: none;    ;
+.link {    
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 button,
@@ -120,7 +120,7 @@ button,
     background-color: var(--clr-primary-400);
     color: var(--clr-white-400);
     border-radius: 999px;
-    padding: 0.25em 0.5em;
+    padding: 0.25em 0.5em;    
 }
 
 /* composition */
@@ -141,6 +141,8 @@ button,
     flex-basis: calc((var(--threshold) - 100%) * 999);
 }
 
+
+/* TODO: refactor into blocks */
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
     .medium-flex-row {
         display: flex;
@@ -161,7 +163,12 @@ button,
 }
 
 .wrapper {
-    padding: 0.5rem 5rem;
+    padding: 0.5em 5em;
+}
+
+.inverse, .inverse a {
+    color: white;
+    background-color: var(--clr-neutral-400);
 }
 
 /* block */
@@ -188,6 +195,24 @@ button,
 
 .navbar .list-of-links {
     gap: 2em;
+}
+
+.hero a, .hero .button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    .sidebar {
+        display: flex;
+    }	
+}
+
+@media only screen and (min-width: 700px) {
+    .hero {
+        display: flex;
+        gap: 1rem;
+    }	
 }
 
 .herosub {
