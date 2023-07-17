@@ -187,6 +187,10 @@ button,
     gap: 1em;
 }
 
+.navbar a {
+    color: var(--clr-white-400);
+}
+
 @media only screen and (max-width: 699.99px) {
     .navbar {
         text-align: center;
@@ -194,7 +198,7 @@ button,
 }
 
 .navbar .list-of-links {
-    gap: 2em;
+    gap: 2em;    
 }
 
 .hero a, .hero .button {
