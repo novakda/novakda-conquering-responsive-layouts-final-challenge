@@ -81,6 +81,7 @@ h5 {
     line-height: 1.1;
 
     color: var(--clr-primary-400);
+    
 }
 
 h1 {
@@ -164,7 +165,7 @@ button,
 
 .wrapper {
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
     margin-inline: auto;
 }
 
@@ -183,6 +184,10 @@ button,
 
 /* block */
 
+.dark-card {
+    text-align: center;
+}
+
 .dark-card,
 .dark-card h2,
 .dark-card h3 {
@@ -196,6 +201,7 @@ button,
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding-block: 1rem;
 }
 
 /* dubious... */
@@ -220,12 +226,6 @@ button,
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1000px) {
-    .sidebar {
-        display: flex;
-    }	
-}
-
 @media only screen and (min-width: 700px) {
     .hero {
         display: flex;
@@ -239,11 +239,50 @@ button,
 
 .herosub {
     background-color: var(--clr-white-500);
+    
+}
+
+.herosub .wrapper {
+    text-align: center;
 }
 
 .herosub h2 {
     font-size: var(--fs-700);
 }
+
+/* content panel */
+
+.content .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+    .content .wrapper {
+        flex-direction: row;
+    }
+}
+
+.content .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 999.99px) {
+    .content .sidebar {
+        flex-direction: row;                
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .content .sidebar {
+        /* NB: works but feels like a hack! */
+        padding-block-start: 3rem;
+    }
+}
+
 
 @media only screen and (min-width: 700px) {
     .herosub .wrapper {
