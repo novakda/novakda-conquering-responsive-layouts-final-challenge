@@ -163,7 +163,9 @@ button,
 }
 
 .wrapper {
-    padding: 0.5em 3vw;
+    width: 80%;
+    max-width: 900px;
+    margin-inline: auto;
 }
 
 .inverse {
@@ -241,6 +243,15 @@ button,
 
 .herosub h2 {
     font-size: var(--fs-700);
+}
+
+@media only screen and (min-width: 700px) {
+    .herosub .wrapper {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding-block: 5rem;
+    }
 }
 
 /* exception */
