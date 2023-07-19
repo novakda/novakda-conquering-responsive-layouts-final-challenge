@@ -223,6 +223,10 @@ button,
 
 /* hero block */
 
+.hero {    
+    padding-block: 5rem;
+}
+
 .hero a,
 .hero .button {
     font-family: 'Oswald', sans-serif;
@@ -233,8 +237,8 @@ button,
     .hero {
         display: flex;
         gap: 1rem;
-        align-items: center;
-        padding-block: 5rem;
+        align-items: center;        
+        min-height: 650px;
     }
 }
 
