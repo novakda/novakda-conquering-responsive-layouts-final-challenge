@@ -260,13 +260,15 @@ button,
     }
 }
 
+/* TODO: prefer headings not to break, cols to be equal width when possible */
+/* TODO more gap */
 .herosub {
     background-color: var(--clr-white-500);
-
 }
 
 .herosub .wrapper {
     text-align: center;
+    gap: 5rem;
 }
 
 .herosub h2 {
@@ -276,7 +278,6 @@ button,
 @media only screen and (min-width: 700px) {
     .herosub .wrapper {
         display: flex;
-        gap: 1rem;
         align-items: center;
         padding-block: 5rem;
     }
