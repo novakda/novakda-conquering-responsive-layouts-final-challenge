@@ -213,12 +213,12 @@ button,
 }
 
 @media only screen and (max-width: 699.99px) {
-    /* TODO logo should be horz center */
     .navbar .wrapper {    
+        /* TODO: why is this needed? Shouldn't align-items:center take care of it? */
         text-align: center;
         display: flex;
         flex-direction: column;
-        /* logo */
+        /* TODO: Is this redunant?  On phon needed to center navbar logo */
         align-items: center;
     }
 }
