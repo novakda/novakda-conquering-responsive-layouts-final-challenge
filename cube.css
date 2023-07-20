@@ -219,6 +219,14 @@ button,
         flex-direction: column;
     }
 }
+@media only screen and (min-width: 700px) {
+    .navbar .wrapper,
+    .navbar .wrapper .list-of-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;;
+    }
+}
 
 .navbar .list-of-links {
     gap: 2em;
