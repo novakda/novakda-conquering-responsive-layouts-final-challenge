@@ -128,7 +128,6 @@ button,
 
 .flow>*+* {
     margin-top: 1em;
-    outline: 1px solid green;
 }
 
 .switcher {
@@ -206,6 +205,8 @@ button,
     padding-block: 1rem;
 }
 
+/* should flex vert on phone, horz ortherwise */
+
 /* dubious... */
 .navbar a {
     color: var(--clr-white-400);
@@ -214,6 +215,8 @@ button,
 @media only screen and (max-width: 699.99px) {
     .navbar {
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -225,6 +228,7 @@ button,
 
 .hero {    
     padding-block: 5rem;
+    min-height: 60vh;
 }
 
 .hero a,
@@ -238,7 +242,6 @@ button,
         display: flex;
         gap: 1rem;
         align-items: center;        
-        min-height: 650px;
     }
 }
 
