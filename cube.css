@@ -213,10 +213,13 @@ button,
 }
 
 @media only screen and (max-width: 699.99px) {
-    .navbar {
+    /* TODO logo should be horz center */
+    .navbar .wrapper {    
         text-align: center;
         display: flex;
         flex-direction: column;
+        /* logo */
+        align-items: center;
     }
 }
 @media only screen and (min-width: 700px) {
@@ -224,12 +227,17 @@ button,
     .navbar .wrapper .list-of-links{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 .navbar .list-of-links {
     gap: 2em;
+}
+
+.navbar-logo {
+    align-items: center;
 }
 
 /* hero block */
