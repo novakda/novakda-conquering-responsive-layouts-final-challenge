@@ -241,8 +241,6 @@ button,
     align-items: center;
 }
 
-/* hero block */
-
 .hero {    
     padding-block: 5rem;
     min-height: 60vh;
@@ -261,8 +259,6 @@ button,
         align-items: center;        
     }
 }
-
-/* herosub block */
 
 .herosub {
     background-color: var(--clr-white-500);
@@ -335,4 +331,8 @@ button,
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-size: var(--fs-400);
+}
+
+h2[data-type="no-top-margin-on-phone"] {
+    margin-top: 0;
 }
